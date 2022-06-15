@@ -2,7 +2,8 @@
 name: Tekton Bundle Push
 on:  # yamllint disable-line rule:truthy
   push:
-    branches: ['main']
+    # branches: ['main']
+    paths: ['definitions/*/*.yaml']
   workflow_dispatch:
 env:
   IMAGE_REGISTRY: quay.io
